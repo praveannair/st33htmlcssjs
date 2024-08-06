@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Tribe Students</title>
+    <style>
+      .container {
+        float: left;
+        width: 100%;
+      }
+      .infoBox {
+        width: 250px;
+        margin: 5px;
+        background-color: silver;
+        padding: 5px;
+        float: left;
+      }
+      iframe {
+        width: 80%;
+        height: 700px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Tribe Students</h1>
+    <div class="container">
+      <div id="divStudents" class="infoBox"></div>
+      <div><iframe name="frame"></iframe></div>
+    </div>
+    <script>
+            const students = [
+            "vigneshbairy03",
+      "ChanduReddy07",
+      "kodigantishivaprasad",
+      "Prashanth2k1",
+      "kavieemacha",
+      "ShashankRala",
+      "Sathwikkoleti",
+      "vigneshbairy03",
+      "Prashanth2k1",
+      "alwalaswarnaraj",
+      "lokeshsai128",
+      "shasshee",
+            ];
+            let str = "";
+            students.forEach((elem,i) => {
+              str += `<div>${i+1}.<a href=https://github.com/${elem} target=_blank>GH</a> - <a href=https://${elem}.github.io/ target=frame>${elem}</a></div>`;
+            });
+            divStudents.innerHTML = str;
+    </script>
+  </body>
+</html>
