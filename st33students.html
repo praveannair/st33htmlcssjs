@@ -47,7 +47,7 @@
             let str = "";
             students.forEach((elem,i) => {
               // str += `<div>${i+1}.<a href=https://github.com/${elem} target=_blank>GH</a> - <a href=https://${elem}.github.io/ target=frame>${elem}</a></div>`;
-              str += `<div style="font-size:40px">${i+1}. <a href=https://${elem}.github.io/ target=frame>${elem.substring(1,12)}...</a></div>`;
+              str += `<div style="font-size:40px">${i+1}. <a href=https://${elem}.github.io/ target=frame>${elem.substring(0,12)}...</a></div>`;
         
             });
             divStudents.innerHTML = str;
