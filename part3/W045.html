@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/images/flower.jpg">
+    <style>
+      * {
+        margin: 0px;
+      }
+
+      .container {
+        display:flex;
+        justify-content: space-between;
+        background-color: silver;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      li {
+        display: inline-block;
+        padding: 5px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        background-color: silver;
+      }
+
+      .menu:hover .submenu {
+        display: block;
+      }
+
+      .submenu {
+        display: none;
+        position: absolute;
+        background-color: yellow;
+        padding: 5px;
+      }
+
+      ul {
+        padding: 0px;
+        background-color: silver;
+      }
+
+      /* ul {
+        margin: 0px;
+        padding: 0px;
+        background-color: silver;
+      }
+      li {
+        display: inline-block;
+        padding: 5px;
+      }
+      li:hover {
+        background-color: grey;
+      }
+      .submenu {
+        display: none;
+        position: absolute;
+      }
+      .menu:hover .submenu {
+        display: block;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>Company Name</h1>
+      </div>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li class="menu">
+            Courses
+
+            <div class="submenu">
+              <a href="#">Python</a><br />
+              <a href="#">Java</a><br />
+            </div>
+          </li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div::first-line {
+        color: blue;
+      }
+      div::first-letter {
+        color: red;
+        font-size: 60px;
+      }
+      p::before {
+        content: url("/images/1.png");
+      } 
+      ::marker {
+        color: blue;
+        font-size: 23px;
+      } /* for li items */
+      ::selection {
+        color: maroon;
+        background: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aliquam
+      neque recusandae mollitia sed est officiis nam explicabo quis repellendus
+      optio, at saepe voluptatibus, fugiat quasi hic dolor voluptatem
+      cupiditate.
+    </div>
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Two</li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil enim
+      veritatis dolorum, numquam velit, eveniet dolorem commodi laboriosam
+      blanditiis totam error vero est labore exercitationem reiciendis ratione,
+      similique dicta ducimus.
+    </p>
+  </body>
+</html>
